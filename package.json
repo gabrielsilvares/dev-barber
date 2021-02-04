@@ -59,7 +59,6 @@
       "mysql": "^2.14.1",
       "nodemailer": "^6.4.11",
       "pg": "^8.2.1",
-      "protagonist": "^2.2.1",
       "rate-limiter-flexible": "^2.1.13",
       "redis": "^3.0.2",
       "reflect-metadata": "^0.1.10",

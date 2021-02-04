@@ -31,10 +31,4 @@ export class UserRepository implements IUserRepository {
       where: { id },
     })
   }
-
-  async findBySubscriberUserById(id: string): Promise<User | undefined> {
-    return await getRepository(User).findOneOrFail(id, {
-      relations: ["subscriber"]
-    })
-  }
 }

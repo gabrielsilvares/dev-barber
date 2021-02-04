@@ -2,13 +2,11 @@ import { IUserRepository } from '@repositories/IUserRepository';
 import { IHashProvider } from '@providers/IHashProvider';
 import { ICreateUserRequestDTO } from './ICreateUserDTO';
 import { User } from '@entities/User';
-import { ISubscriberRepository } from '@repositories/ISubscriberRepository';
 
 export class CreateUserUseCase {
   constructor(
     private userRepository: IUserRepository,
     private hashProvider: IHashProvider,
-    private subscriber: ISubscriberRepository
   ) {}
 
   async execute({ name, email, password }: ICreateUserRequestDTO): Promise<User> {
