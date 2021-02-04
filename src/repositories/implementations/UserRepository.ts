@@ -13,9 +13,6 @@ export class UserRepository implements IUserRepository {
       name, 
       email, 
       password,
-      subscriber: {
-        email,
-      }
     });
 
     await getRepository(User).save(user);
